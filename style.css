@@ -1,0 +1,67 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #1e1e2f; /* different from terminal */
+  font-family: 'Courier New', Courier, monospace;
+  color: limegreen;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ASCII art stays at the top */
+.ascii-art {
+  color: cyan;
+  white-space: pre;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 20px;
+}
+
+/* Fills all remaining space */
+.terminal {
+  background-color: black;
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  margin: 0 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ff00;
+  display: flex;
+  flex-direction: column;
+}
+
+/* New input always at bottom */
+.input-line {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  width: 100%;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+
+/* Prompt style */
+.prompt {
+  margin-right: 5px;
+}
+
+/* Input field */
+input {
+  background: black;
+  border: none;
+  color: limegreen;
+  font-family: inherit;
+  font-size: 16px;
+  flex-grow: 1;        /* Makes input take up remaining space */
+  min-width: 0;        /* Prevents overflow */
+  outline: none;
+}
+
+
+/* Command output text */
+.output {
+  margin: 5px 0;
+  white-space: pre-wrap;
+}

@@ -1,0 +1,44 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaya's Terminal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <div class="ascii-art">
+
+    __                     ________          __  _      __              __     _          ____             __  ____      ___     
+    / /___ ___  ______ _   /_  __/ /_  ____ _/ /_(_)____/ /_  ___  _____/ /___ ( )_____   / __ \____  _____/ /_/ __/___  / (_)___ 
+__  / / __ `/ / / / __ `/    / / / __ \/ __ `/ __/ / ___/ __ \/ _ \/ ___/ / __ `/// ___/  / /_/ / __ \/ ___/ __/ /_/ __ \/ / / __ \
+/ /_/ / /_/ / /_/ / /_/ /    / / / / / / /_/ / /_/ / /__/ / / /  __/ /  / / /_/ / (__  )  / ____/ /_/ / /  / /_/ __/ /_/ / / / /_/ /
+\____/\__,_/\__, /\__,_/    /_/ /_/ /_/\__,_/\__/_/\___/_/ /_/\___/_/  /_/\__,_/ /____/  /_/    \____/_/   \__/_/  \____/_/_/\____/ 
+         /____/                                                                                                                   
+
+  </div>
+
+  <div class="terminal" id="terminal">
+    <div class="output">visitor@jaya-terminal:~$ Type 'help' for a list of commands.</div>
+    <!-- <div class="output">
+Available commands:
+whoami        About Jaya
+skills        Technical skills
+projects      View projects
+experience    Work experience
+education     Academic background
+contact       Contact details
+clear         Clear the terminal
+help          List all commands
+    </div> -->
+    <div class="input-line">
+      <span class="prompt">visitor@jaya-terminal:~$</span>
+      <input type="text" id="command" autofocus>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
